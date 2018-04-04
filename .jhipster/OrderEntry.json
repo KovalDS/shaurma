@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "productOrder",
+            "otherEntityName": "productOrder",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "products",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "orderEntry"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "quantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20180404083701",
+    "entityTableName": "order_entry",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

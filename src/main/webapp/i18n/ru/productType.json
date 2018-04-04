@@ -1,0 +1,11 @@
+{
+    "shaurmaStoreApp": {
+        "ProductType" : {
+            "null": "",
+            "MEAT": "MEAT",
+            "VEGETABLE": "VEGETABLE",
+            "SAUCE": "SAUCE",
+            "SUPPLEMENT": "SUPPLEMENT"
+        }
+    }
+}

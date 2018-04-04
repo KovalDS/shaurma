@@ -1,0 +1,25 @@
+
+{
+    "shaurmaStoreApp": {
+        "orderEntry" : {
+            "home": {
+                "title": "Order Entries",
+                "createLabel": "Создать новый Order Entry",
+                "createOrEditLabel": "Создать или отредактировать Order Entry"
+            },
+            "created": "Новый Order Entry создан с идентификатором {{ param }}",
+            "updated": "Order Entry обновлен с идентификатором {{ param }}",
+            "deleted": "Order Entry удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Order Entry {{ id }}?"
+            },
+            "detail": {
+                "title": "Order Entry"
+            },
+            "quantity": "Quantity",
+            "price": "Price",
+            "productOrder": "Product Order",
+            "products": "Products"
+        }
+    }
+}

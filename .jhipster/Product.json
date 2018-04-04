@@ -1,0 +1,45 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "orderEntry",
+            "otherEntityName": "orderEntry",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isMandatory",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "ProductType",
+            "fieldValues": "MEAT,VEGETABLE,SAUCE,SUPPLEMENT"
+        }
+    ],
+    "changelogDate": "20180404083702",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

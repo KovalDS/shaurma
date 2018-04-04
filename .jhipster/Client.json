@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "client"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "orders",
+            "otherEntityName": "productOrder",
+            "otherEntityRelationshipName": "client"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "phone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numberOfPoints",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180404083659",
+    "entityTableName": "client",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

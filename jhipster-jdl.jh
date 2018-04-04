@@ -5,7 +5,7 @@ entity Client {
     numberOfPoints Integer
   }
 
-entity Order {
+entity ProductOrder {
 	id Long
     totalPrice BigDecimal
 	date LocalDate 
@@ -46,11 +46,11 @@ relationship OneToMany{
 }
 
 relationship OneToMany{
-	Order{orderEntries} to OrderEntry
+	ProductOrder{orderEntries} to OrderEntry
 }
 
 relationship OneToMany{
-	Client{orders} to Order
+	Client{orders} to ProductOrder
 }
 
 

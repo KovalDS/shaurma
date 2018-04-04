@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "orderEntries",
+            "otherEntityName": "orderEntry",
+            "otherEntityRelationshipName": "productOrder"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "totalPrice",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "COMPLETED,IN_PROGRESS,CANCELLED"
+        }
+    ],
+    "changelogDate": "20180404083700",
+    "entityTableName": "product_order",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
