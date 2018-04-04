@@ -1,0 +1,58 @@
+
+entity Client {
+	id Long
+    phone String
+    numberOfPoints Integer
+  }
+
+entity Order {
+	id Long
+    totalPrice BigDecimal
+	date LocalDate 
+    status Status  
+}
+
+entity OrderEntry{
+	id Long
+    quantity Integer
+    price BigDecimal
+}
+
+enum Status{
+   COMPLETED, IN_PROGRESS, CANCELLED 
+}
+
+entity Product {
+	id Long
+	name String
+    description String
+    isMandatory Boolean
+    image ImageBlob
+    price BigDecimal
+    type ProductType
+}
+
+
+enum ProductType {
+   MEAT, VEGETABLE, SAUCE, SUPPLEMENT
+}
+
+relationship OneToOne{
+	Client{user} to User{client}
+}
+
+relationship OneToMany{
+	OrderEntry{products} to Product
+}
+
+relationship OneToMany{
+	Order{orderEntries} to OrderEntry
+}
+
+relationship OneToMany{
+	Client{orders} to Order
+}
+
+
+
+
